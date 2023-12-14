@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 11;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.inner-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 50px;
+}
+
+header .inner-header .logo img {
+  height: 20px;
+}
+
+header .inner-header .language-btn {
+  height: 30px;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid white;
+  padding: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.wrap {
+  position: relative;
+  max-width: 1269px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* Style for Section one */
+.section-one {
+  display: flex;
+  min-height: 100vh;
+
+}
+
+.section-one .banner img {
+  height: auto;
+  display: flex;
+}
+
+.section-one .main-title {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+}
+
+.section-one .main-title .title {
+  color: white;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.section-one .main-title .sub-title {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Style for Section two */
+.section-two {
+  position: relative;
+  top: 0;
+  padding-bottom: 100px;
+}
+.section-two .main-title {
+  border: solid red;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+}
+.section-two .main-title .title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1277BC;
+  margin-bottom: 30px;
+  max-width: 85%;
+
+}
+.section-two .main-title .sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ABACAF;
+}
+.section-two .list .item{
+  border: yellow solid;
+  padding-top: 10px;
+  line-height: 1.5;
+}
+.section-two .list .item .title {
+  color: #1277BC;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.section-two .list .item .info {
+  color: #ABACAF;
+  font-weight: 400;
+  line-height: 1.4;
+  max-width: 88%;
+}
+.section-two .list .item.pic img {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  width: 400px;
+  height: 400px;
+  padding-right: 50px;
+
+}
+/*.section-three {*/
+/*  min-height: 100vh;*/
+
+/*}*/
+/*.section-three .main-title .title {*/
+/*  padding-bottom: 100px;*/
+/*}*/
+
