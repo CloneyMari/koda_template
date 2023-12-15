@@ -13,6 +13,13 @@ body {
   overflow-x: hidden;
 }
 
+.wrap {
+  position: relative;
+  max-width: 1269px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
 /* Navbar */
 header {
   position: absolute;
@@ -44,13 +51,6 @@ header .inner-header .language-btn {
   align-items: center;
 }
 
-.wrap {
-  position: relative;
-  max-width: 1269px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
 /* Style for Section one */
 .section-one {
   display: flex;
@@ -59,13 +59,13 @@ header .inner-header .language-btn {
 }
 
 .section-one .banner img {
-  height: auto;
   display: flex;
+
 }
 
 .section-one .main-title {
   position: absolute;
-  bottom: 100px;
+  bottom: 200px;
   width: 100%;
 }
 
@@ -87,17 +87,18 @@ header .inner-header .language-btn {
 /* Style for Section two */
 .section-two {
   position: relative;
-  top: 0;
-  padding-bottom: 100px;
-}
-.section-two .main-title {
-  border: solid red;
-  position: relative;
-  padding-top: 100px;
   padding-bottom: 100px;
 
 }
-.section-two .main-title .title {
+
+.section-two .content .main-title {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 30px;
+
+}
+
+.section-two .content .main-title .title {
   font-size: 42px;
   font-weight: 700;
   color: #1277BC;
@@ -105,43 +106,142 @@ header .inner-header .language-btn {
   max-width: 85%;
 
 }
-.section-two .main-title .sub-title {
+
+.section-two .content .main-title .sub-title {
   font-size: 60px;
   font-weight: 600;
   line-height: 1.2;
   color: #ABACAF;
 }
-.section-two .list .item{
-  border: yellow solid;
+
+.section-two .content .list {
+  width: 80%;
+}
+
+.section-two .content .list .item {
+  text-align: justify;
   padding-top: 10px;
   line-height: 1.5;
 }
-.section-two .list .item .title {
+
+.section-two .content .list .item .title {
   color: #1277BC;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 400;
   margin-bottom: 10px;
 }
-.section-two .list .item .info {
+
+.section-two .content .list .item .info {
   color: #ABACAF;
   font-weight: 400;
   line-height: 1.4;
-  max-width: 88%;
 }
-.section-two .list .item.pic img {
+
+.section-two .pic {
+  width: 380px;
+  height: 500px;
   position: absolute;
-  right: 20px;
+  right: 150px;
   top: 0;
-  width: 400px;
-  height: 400px;
   padding-right: 50px;
+}
+
+.section-two .pic img {
+  position: absolute;
+  width: 300px;
+  top: 0;
+  right: 0;
+  object-fit: cover;
 
 }
-/*.section-three {*/
-/*  min-height: 100vh;*/
 
+.section-two .pic::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  padding: 100px;
+  background-color: #1277BC;
+  mix-blend-mode: color;
+  z-index: 3;
+}
+
+/* Style for Section three */
+.section-three {
+  position: relative;
+  min-height: 100px;
+}
+
+.section-three .banner img {
+  display: flex;
+  position: absolute;
+
+}
+
+.section-three .main-title {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+}
+
+.section-three .main-title .title {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+.section-three .main-title .sub-title {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px;
+
+}
+
+.section-three .list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  padding: 50px;
+
+}
+
+.section-three .list .item {
+  position: relative;
+  top: 300px;
+  bottom: 100px;
+}
+
+.section-three .list .icon {
+  width: 50px;
+  margin-bottom: 50px;
+}
+
+.section-three .list .item .title {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.section-three .list .item .info {
+  color: white;
+  text-align: center;
+  font-size: 19px;
+  line-height: 1.4;
+}
+/*!* Style for Section four *!*/
+/*.section-four {*/
+/*  position: relative;*/
+/*  display: flex;*/
+/*  min-height: 100vh;*/
 /*}*/
-/*.section-three .main-title .title {*/
-/*  padding-bottom: 100px;*/
+/*.section-four .main-title {*/
+/*  color: red;*/
+/*  position: relative;*/
 /*}*/
+
+
 
